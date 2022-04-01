@@ -1,0 +1,28 @@
+.row1{
+display: flex;
+margin: 0px 90px;
+margin-bottom: 30px;
+pad: 10px 30px;
+
+
+}
+.row2{
+    display: flex;
+    
+    margin: 0px 90px;
+}
+.card1{
+    width: 340px;
+    height: 340px;
+    background-color:#1f3933; ;
+    margin: 20px;
+    padding: 20px;
+    color: white;
+}
+.card1:hover{
+    background-color: white;
+    color: black;
+    border: solid 1px;
+    transition:2px;
+}
+

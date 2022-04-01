@@ -1,0 +1,60 @@
+{
+  "series": [
+    {
+      "title": "Drama",
+      "genre": "Simple drama",
+      "cast": "yash",
+      "quote": "ganda muttaide",
+      "language": "Kannada",
+      "id": 1
+    },
+    {
+      "title": "paramatma",
+      "enre": "drama",
+      "cast": "punit",
+      "quote": "tithi vade",
+      "language": "Kannada",
+      "id": 2
+    },
+    {
+      "title": "garuda gamana vrushabh vahana",
+      "genre": "drama",
+      "cast": "ondu motteya kathe",
+      "quote": "byavashree",
+      "language": "English",
+      "id": 3
+    },
+    {
+      "title": "ulidavaru kandante",
+      "genre": "drama",
+      "cast": "rakshit",
+      "quote": "shoot madbeka",
+      "language": "English",
+      "id": 4
+    },
+    {
+      "title": "gfh",
+      "cast": "fgh",
+      "quote": "fg",
+      "id": 5
+    },
+    {
+      "title": "gfh",
+      "cast": "fgh",
+      "quote": "fg",
+      "id": 6
+    },
+    {
+      "title": "ghhj",
+      "cast": "ghj",
+      "quote": "gfh",
+      "id": 7
+    },
+    {
+      "title": "fghj",
+      "cast": "fgh",
+      "quote": "fgh",
+      "id": 8
+    }
+  ]
+}

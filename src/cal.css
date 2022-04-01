@@ -1,0 +1,13 @@
+.cal{
+    display: flex;
+    background-color: #ffc627!important;
+    font-weight: bold;
+    justify-content: space-around;
+}
+#paragraph{
+    font-weight: normal;
+}
+#anker{
+    padding: 13px;
+    text-decoration: underline;
+}

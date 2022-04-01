@@ -1,0 +1,66 @@
+.display{
+    
+    border-radius: 3px;
+    margin: 0px 100px;
+    box-shadow: 0px 2px 1px;
+    padding-left: 20px;
+    background-color: antiquewhite;
+    padding-bottom: 10px;
+}
+.display:hover{
+    box-shadow: 5px 5px 10px;
+    margin-left: 102px;
+    border-left: 4px solid ;
+    border-color: brown;
+
+}
+.header{
+    margin:0px 550px;
+}
+h3{
+    margin-left: 20px;
+}
+button{
+     margin-left: 400px;
+     margin-top: 10px;
+    width: 500px;
+    height: 30px;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 15px;
+    font-size: 20px;
+}
+button:hover{
+    background-color: aliceblue;
+    color: black;
+    
+}
+.discription img{
+   height: 400px;
+   width: 400px;
+   
+}
+.discription img :hover{
+    transform: scale(0);
+}
+.discription{
+    display: flex;
+    
+}
+.discription p{
+    margin-left: 30px;
+}
+.populerSeies img{
+    height: 500px;
+    width: 280px;
+    margin:0px 10px 5px 25px;
+    transition: transform .5s;
+
+}
+.populerSeies{
+    background-color: rgb(152, 228, 228);
+    justify-content: space-between;
+}
+.populerSeies img:hover{
+    transform:scale(1.1);
+}

@@ -1,0 +1,390 @@
+index.html
+===========
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
+
+
+app.js
+========
+// import logo from './logo.svg';
+import './App.css';
+
+function App() {
+  let a="hello shreenivas"
+  let ulink="https://www.google.co.in/"
+  let likes=10;
+  let handleClick=() =>{
+    likes++;
+    document.getElementById("count").innerHTML=likes;
+  }
+  return (
+    <div className="App">
+     <h1>{a}</h1>
+     <h1 style={{backgroundColor:"red"}} id="count">your name got {likes} likes</h1>
+     <button onClick={handleClick}>Click</button><br />
+     {/* <a href={ulink}> link</a>
+     <h1>{10+10}</h1>
+     <img src='https://www.google.co.in/logos/doodles/2022/rosa-bonheurs-200th-birthday-6753651837109371-l.webp'></img> */}
+    </div>
+  );
+}
+
+export default App;
+
+
+index.js
+========
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+
+
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+
+component:
+===========
+// import logo from './logo.svg';
+import './App.css';
+import Navbar from './navbar';
+import Card from './card';
+import Lorem from './lorem';
+import Navcss from './navcss';
+
+function App() {
+  let handleClick = (name)=>{
+    console.log("shreenivas say hello to",name);
+  }
+  
+  
+  return ( 
+    <div className="App">
+      <Navcss/>
+
+      <br /><br /><br /><br />
+      
+      <div className='nh'>
+      <Navbar/>
+      <h1>App Component by shreenivas </h1>
+      </div>
+     <div className='cl '>
+     <Card/>
+     <Lorem/>
+     </div>
+     <button  onClick={()=>
+      handleClick("sagar")}>click</button>
+     
+    </div>
+  );
+}
+
+export default App;
+
+
+Hook
+======
+import { useState } from "react"; -->import from react built in
+function App(){  
+  //      updaterFunction
+  //          ^ 
+  //          |
+  let [name,setName]= useState("sagar")
+  let handleClick=()=>{
+    setName("punit")
+
+  }
+  let handleClick1=()=>{
+    setName("Shreenivas")
+
+  }
+
+  
+  return ( 
+    <div className="App">
+      <Navcss/>
+      <h1>{name}</h1>
+      <button onClick={handleClick}>Click</button>
+      <button onClick={handleClick1}>Click</button>
+
+    </div>
+  );
+}
+
+export default App;
+
+example:
+========
+import { useState } from 'react';
+
+function App(){  
+  //      updaterFunction
+  //          ^ 
+  //          |
+  let [name,setName]= useState(0)
+  let handleClick=()=>{
+    setName(name+1)
+
+  }
+  let handleClick1=()=>{
+    setName(name-1)
+
+  }
+  let handleClick2=()=>{
+    setName(name=0)
+
+  }
+
+  
+  return ( 
+    <div className="App">
+      <Navcss/>
+      <h1>Shreenivas fuck the lady</h1>
+      <h2>{name}</h2>
+      <button onClick={handleClick}>shreenivas fuck the lady</button>
+      <button onClick={handleClick1}> shreenivas fucked by lady</button>
+      <button onClick={handleClick2}> mutti hodkond</button>
+
+    </div>
+  );
+}
+======
+import Navcss from './navcss';
+import { useState } from 'react';
+
+function App(){  
+  //      updaterFunction
+  //          ^ 
+  //          |
+  let [name,setName]= useState("Gulabi")
+  let [age,setAge]= useState(25)
+  let [yop,setYop]= useState(2019)
+  let handleClick=()=>{
+    setName("Shreenivas")
+  }
+  let handleClick1=()=>{
+    setAge(75)
+  }
+  let handleClick2=()=>{
+    setYop(1998)
+  }
+
+
+  
+  return ( 
+    <div className="App">
+      <Navcss/>
+      <h1>Name:{name}</h1>
+      <h1>Age:{age}</h1>
+      <h1>Yop:{yop}</h1>
+      <button onClick={handleClick}>Update Name</button>
+      <button onClick={handleClick1}>Update Age</button>
+      <button onClick={handleClick2}>Update Yop</button>
+    
+
+    </div>
+  );
+}
+
+export default App;
+
+======
+// import logo from './logo.svg';
+import './App.css';
+// import Navbar from './navbar';
+// import Card from './card';
+// import Lorem from './lorem';
+import Navcss from './navcss';
+import { useState } from 'react';
+
+function App(){  
+  //      updaterFunction
+  //          ^ 
+  //          |
+  let [name,setName]= useState("Gulabi")
+  let [age,setAge]= useState(25)
+  let [yop,setYop]= useState(2019)
+  let handleClick=()=>{
+    setName("Shreenivas")
+    setAge(75)
+    setYop(1998)
+  }
+ return ( 
+    <div className="App">
+      <Navcss/>
+      <h1>Name:{name}</h1>
+      <h1>Age:{age}</h1>
+      <h1>Yop:{yop}</h1>
+      <button onClick={handleClick}>Update</button>
+    </div>
+  );
+}
+
+export default App;
+
+===================
+//Dispay the array of objects
+
+// import logo from './logo.svg';
+import './App.css';
+import FilmList from './FilmList';
+import Footer from './footer';
+import MoviesData from './movies';
+
+// import Navbar from './navbar';
+// import Card from './card';
+// import Lorem from './lorem';
+import Navcss from './navcss';
+
+
+
+function App(){  
+ 
+
+ return ( 
+    <div className="App">
+      
+      <Navcss/>
+    
+     
+      <FilmList/>
+     
+     
+      <MoviesData/>
+      <Footer/>
+      
+    </div>
+  );
+}
+
+export default App;
+==================
+//assignment
+
+
+import './App.css';
+import Calender from './cal';
+import CardStar from './cardstar';
+import Green from './green';
+import Navcss from './navcss';
+import Paragraph from './paragraph';
+import Starbucks from './starbucks';
+
+function App(){  
+ 
+
+ return ( 
+    <div className="App">
+      <Navcss/>
+      <Starbucks/>
+      <Calender/>
+      <Green/>
+      <Paragraph/>
+      <CardStar/>
+      
+      
+    </div>
+  );
+}
+
+export default App;
+
+===============
+//assignment
+
+
+import './App.css';
+
+import Home from './home';
+import Navcss from './navcss';
+import Footer from './footer';
+
+function App(){  
+ 
+
+ return ( 
+    <div className="App">
+      <Navcss/>
+      <Home/>
+      <Footer/>     
+      
+    </div>
+  );
+}
+
+export default App;
+
+import bin from './iconimages/bin.png'
+const SeriesList = (props) => {
+    let seriesData=props.data;
+    let title =props.pageTitle;
+    return (  
+        <div className="SeriesList">
+            <h1 style={{color:"midnightblue",textAlign:"center"}}>{title}</h1>
+             {seriesData.map((value)=>{
+          return(
+            <div className='display'>
+              <h1>Title:{value.title}</h1>
+              <h2>Genre:{value.genre}</h2>
+              <h4>Famous quote:{value.quote}</h4>
+              <img src={bin}   height="40px" width="40px"/>
+            </div>
+          )
+        }
+        )}
+        </div>
+    );
+}
+ 
+export default SeriesList;
+
+

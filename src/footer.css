@@ -1,0 +1,24 @@
+.foot{
+    background-color:grey;
+    padding: 20px 0px;
+    margin-top: 10px;
+}
+.foot ul{
+    display: flex;
+    
+    
+    color: black;
+    
+    text-align: center;
+    
+    
+}
+.foot ul a{
+    text-decoration-line: none;
+    color: black;
+    
+}
+.foot li{
+    margin-top: 12px;
+    margin-left: 80px;
+}

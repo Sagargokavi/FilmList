@@ -1,0 +1,23 @@
+.parent{
+   
+    background-color: #1f3933;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.head{
+    color: beige;
+    margin: 0px 50px ;
+    padding-top: 200px;
+
+}
+.head h1{
+    font-size: 50px;
+}
+.head p{
+    font-size: large;
+}
+.image{
+    margin: 0px 50px;
+}

@@ -1,0 +1,33 @@
+.parentaddfilm{
+    background-color: cadetblue;
+    height: 500px;
+}
+.text{
+    margin-left:470px;
+    
+}
+.text input{
+    width: 350px;
+    border-radius: 8px;
+    padding: 5px;
+    text-align: center;
+    font-size:large;
+    border: none;
+
+}
+.text :hover{
+    background-color: aquamarine;
+}
+.text h1{
+    margin-left: 30px;
+}
+.btn button{
+        background-color:black;
+        width: 200px;
+        text-align: center;
+        margin-left: 550px;
+        border-radius: 8px;
+}
+.btn button:hover{
+    color: wheat;
+}

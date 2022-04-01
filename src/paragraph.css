@@ -1,0 +1,36 @@
+.paragraph-parent {
+    align-items: center;
+    /* background-color: aqua; */
+    margin-bottom: 30px;
+    
+}
+.paragraph-parent p{
+    align-items: center;
+    margin: 0px 370px;
+    justify-content: initial;
+    font-size: 16px!important;
+    display: block;
+    color: #212529;
+    line-height: 1.5;
+    font-size: 16px;
+    
+}
+.paragraph-parent h2{
+    margin: 50px 340px;
+    font-size: 27px;
+    color: #29413b!important;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.paragraph-parent span{
+    height: 50px;
+    width: 100%;
+    border-bottom: #29413b solid 5px;
+   color:white;
+    align-items: center;
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: 500px;
+    
+
+}
